@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".contoller.ConversationFragment"
+              android:orientation="vertical"
+              android:background="@drawable/start_page_background"
+>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conversation with "
+            android:textSize="26dp"
+            android:id="@+id/tvConversation"
+            android:layout_alignParentTop="true"
+    />
+    <ListView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/lvMyMessage"
+              android:layout_below="@id/tvConversation"
+
+
+    />
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="center|bottom"
+                  android:padding="8dp"
+                  android:minHeight="10dp"
+                  android:layout_alignParentBottom="true"
+                  android:orientation="horizontal"
+    android:layout_below="@id/lvMyMessage">
+
+        <EditText android:layout_width="300dp"
+                  android:layout_height="wrap_content"
+
+                  android:id="@+id/etMyMessage"
+        />
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:id="@+id/btnMessageSend"
+                android:text="send"/>
+    </LinearLayout>
+</RelativeLayout>
